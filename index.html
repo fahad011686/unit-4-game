@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Jewel Heist!</title>
+    <title>Gem Heist!</title>
 </head>
 
 <body>
     <div class="container">
 
-        <h2>Press a key to guess.</h2>
+        <div class="jumbotron">
+            <h1 class="text-center">Gem Heist</h1>
+            <h3 class="text-center">Guess correct gems to precisely match the goal!</h3>
+        </div>
 
 
         <div class="col-lg-3 col-md-6 col-sm-12">Your Goal:
@@ -30,14 +32,33 @@
         </div>
 
         <div class="col-xs-12 col-md-6">Gems:
-            
+                <button id="gem-1" class="btn" value="1"><span><img src="assets/img/gem1.png" width=60px></span></button>
+                <button id="gem-2" class="btn" value="2"><span><img src="assets/img/gem2.png" width=50px></span></button>
+                <button id="gem-3" class="btn" value="3"><span><img src="assets/img/gem3.png" width=50px></span></button>
+                <button id="gem-4" class="btn" value="4"><span><img src="assets/img/gem4.png" width=50px></span></button>
+                </div>
         </div>
     </div>
 
-    <audio id="audio" controls style="display:none">
-        <source src="http://tek.site.nfoservers.com/server/sound/misc/pac_cherry.wav" type="audio/mpeg"> Your browser does not support the audio element.
-      </audio>
+    <div class="col-xs-6 col-md-3">Win:
+        <div id="winBox">
+            0
+        </div>
+    </div>
+    <div class="col-xs-6 col-md-3">Loss:
+        <div id="winBox">
+            0
+        </div>
+    </div>
 
+
+    <audio id="audio" controls style="display:none">
+        <source src="http://tek.site.nfoservers.com/server/sound/misc/pac_cherry.wav" type="audio/mpeg"> Your browser
+        does not support the audio element.
+    </audio>
+
+
+<!-- Gem image from https://www.istockphoto.com/vector/pixel-art-vector-gems-for-game-isolated-on-white-background-gm1018937230-273880157 -->
     <script src="assets/javascript/game.js"></script>
 </body>
 
