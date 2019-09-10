@@ -1,0 +1,19 @@
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+h1 {
+    font-family: none;
+}
+
+.btn {
+    background-color: #e9ecef;
+}
+
+.col-lg-6 {
+    margin: auto;
+    border: 3px solid black;
+    margin: 4px;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}

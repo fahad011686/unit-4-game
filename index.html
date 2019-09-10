@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Gem Heist!</title>
@@ -19,47 +21,45 @@
         </div>
 
 
-        <div class="col-lg-3 col-md-6 col-sm-12">Your Goal:
-            <div id="goalBox">
-                fill in blank
-            </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">Your Goal:
+            <div id="goalBox"></div>
         </div>
 
-        <div class="col-xs-12 col-md-6">Gem Value:
-            <div id="pointBox">
-                fill in blank
-            </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">Your Score:
+            <div id="yourScore"></div>
         </div>
 
-        <div class="col-xs-12 col-md-6">Gems:
-                <button id="gem-1" class="btn" value="1"><span><img src="assets/img/gem1.png" width=60px></span></button>
-                <button id="gem-2" class="btn" value="2"><span><img src="assets/img/gem2.png" width=50px></span></button>
-                <button id="gem-3" class="btn" value="3"><span><img src="assets/img/gem3.png" width=50px></span></button>
-                <button id="gem-4" class="btn" value="4"><span><img src="assets/img/gem4.png" width=50px></span></button>
-                </div>
+        <div class="col-lg-6 col-md-12">
+            <button id="gem1" class="btn"><span><img src="assets/img/gem1.png" width=60px></span></button>
+            <button id="gem2" class="btn"><span><img src="assets/img/gem2.png" width=50px></span></button>
+            <button id="gem3" class="btn"><span><img src="assets/img/gem3.png" width=50px></span></button>
+            <button id="gem4" class="btn"><span><img src="assets/img/gem4.png" width=50px></span></button>
+        </div>
+
+        <div class="col-lg-6">
+            Win: <div id="winBox"></div>
+            Loss: <div id="loseBox"></div>
         </div>
     </div>
-
-    <div class="col-xs-6 col-md-3">Win:
-        <div id="winBox">
-            0
-        </div>
-    </div>
-    <div class="col-xs-6 col-md-3">Loss:
-        <div id="winBox">
-            0
-        </div>
-    </div>
-
 
     <audio id="audio" controls style="display:none">
-        <source src="http://tek.site.nfoservers.com/server/sound/misc/pac_cherry.wav" type="audio/mpeg"> Your browser
-        does not support the audio element.
-    </audio>
+        <source src="http://noproblo.dayjo.org/ZeldaSounds/LTTP/LTTP_Rupee1.wav" type="audio/mpeg"> Your browser
+        does not support the audio element.</audio>
+
+    <audio id="audio_win" controls style="display:none">
+        <source src="http://noproblo.dayjo.org/ZeldaSounds/LTTP/LTTP_ItemFanfare_Stereo.wav" type="audio/mpeg"> Your browser
+        does not support the audio element.</audio>
+
+    <audio id="audio_lose" controls style="display:none">
+        <source src="http://noproblo.dayjo.org/ZeldaSounds/LTTP/LTTP_Link_Dying.wav" type="audio/mpeg"> Your browser
+        does not support the audio element.</audio>
 
 
-<!-- Gem image from https://www.istockphoto.com/vector/pixel-art-vector-gems-for-game-isolated-on-white-background-gm1018937230-273880157 -->
-    <script src="assets/javascript/game.js"></script>
+
+    <!-- Gem image from https://www.istockphoto.com/vector/pixel-art-vector-gems-for-game-isolated-on-white-background-gm1018937230-273880157 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/game.js"></script>
+
 </body>
 
 </html>
